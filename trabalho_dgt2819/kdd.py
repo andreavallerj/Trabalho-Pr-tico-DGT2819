@@ -1,9 +1,7 @@
 palavras = list()
 
 with open("loremipsum.txt", "r", encoding="utf-8") as arquivo:
-    # Percorre o arquivo linha a linha (Passo 3.b)
     for linha in arquivo:
-        # Separa a linha em palavras utilizando o método split() (Passo 3.c)
         palavras_linha = linha.split()
         
         for palavra in palavras_linha:
@@ -14,7 +12,6 @@ with open("loremipsum.txt", "r", encoding="utf-8") as arquivo:
     print(f"Total de palavras carregadas do arquivo: {len(palavras)}")
 
 import time
-
 
 inicio_tempo = time.time()
 
